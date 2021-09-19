@@ -10,7 +10,7 @@
             }
             </style>
         <h1 align="center">Work For Us</h1>
-        <form action="//submit.form" id="EmploymentApplication" method="post" onsubmit="return ValidateForm(this);">
+        <form id="EmploymentApplication" onsubmit="return ValidateForm(this);">
             <script type="text/javascript">
             function ValidateForm(frm) {
             if (frm.First_Name.value == "") { alert('First name is required.'); frm.First_Name.focus(); return false; }
@@ -19,7 +19,12 @@
             if (frm.Email_Address.value.indexOf("@") < 1 || frm.Email_Address.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.Email_Address.focus(); return false; }
             if (frm.Position.value == "") { alert('Position is required.'); frm.Position.focus(); return false; }
             if (frm.Phone.value == "") { alert('Phone is required.'); frm.Phone.focus(); return false; }
-            return true; }
+            return true;}
+        
+            let submit =document.getElementById("submit")
+            submit.onclick(function() {
+                alert("Form Successfully Submitted")
+            })
             </script>
             <table border="0" cellpadding="5" cellspacing="0" align="center" >
             <tr> <td style="width: 50%">
@@ -53,7 +58,15 @@
             <label for="Reference"><b>Why do you want to work for us?</b></label><br />
             <textarea style=resize:none name="Reference" rows="8" cols="50" style="width:100%;max-width: 535px"></textarea>
             </td> </tr> <tr> <td colspan="2" style="text-align: center;">
-            <input name="skip_submit" type="submit" value="Send Application" />
+            <button name="skip_submit" type="submit" id="submit" style=" border-radius: 3px;
+            padding: 10px ;
+            margin: 10px;
+            width:200px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 14px;
+            color: rgb(7, 0, 0);
+            border: none;">Send Application</button>
             </td> </tr>
             </table>
             </form>
