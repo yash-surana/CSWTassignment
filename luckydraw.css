@@ -1,0 +1,47 @@
+body{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.first{
+    position: relative;
+}
+.lucky-draw{
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1{
+    background-color: #C4B5FD;
+    font-size: 72px;
+    padding: 20px;
+    border-radius: 15px;
+    color: black;
+    box-shadow: 7px 10px 2px #6D28D9;
+}
+h3{
+    font-size: 36px;
+    margin: 5px;
+}
+h5{
+    font-size: 28px;
+    color: #E11D48;
+}
+.lucky-btn{
+    border-radius: 3px;
+    padding: 20px ;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 22px;
+    color: black;
+    border: none;
+    width: 100%;
+}
+.lucky-btn:hover{
+    background-color: #6D28D9;
+    color: whitesmoke;
+}

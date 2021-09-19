@@ -11,8 +11,14 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 0px;
 }
-
+.title{
+    font-size: 38px;
+    font-weight: bold;
+    color:blue ;
+    text-decoration: none;
+}
 .list{
     list-style: none;
     display: flex;
@@ -21,14 +27,19 @@ body{
     padding-left: 0;
 }
 .nav-icons{
-    width: 400px;
+    width: 650px;
 }
 
 .nav-items{
     padding: 10px;
     cursor: pointer;
+    font-size: 22px;
 }
-
+.offer{
+    font-size: larger;
+    border-bottom: 5px solid blue;
+    padding: 5px;
+}
 .nav-link{
     text-decoration: none;
     color: whitesmoke;
@@ -56,8 +67,29 @@ body{
     background-color: grey;
     width: 100px;
 }
+.country-btn{
+    width: 200px;
+    color: black;
+    border-radius: 3px;
+    padding: 15px ;
+    margin: 10px 15px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+}
 
-
+.country-btn:hover{
+    background-color: blue;
+    color: whitesmoke;
+}
+.changeCountry{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+/* .changeCountry */
 /* Section */
 
 .section{
